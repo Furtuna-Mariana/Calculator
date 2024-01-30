@@ -9,15 +9,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e6e6e6;
+    background: #292828e6;
+    
+}
+
+*, *::before, *::after {
+    background-color: #000000d8;
+    border-radius: 0px 0px 40px 40px;
 }
 
 .container{
-   /* position: relative; */
-   border-radius: 10px;
    padding: 1rem 2rem;
-   background-color: white;
-   border-radius: 10px 10px 0 0;
+   background-color: #000000d8;
+   border: 0.1px solid white;
+   border-radius: 30px 30px 30px 30px ;
 }
 
 .container > .display{
@@ -28,27 +33,20 @@ body{
     text-align: right;
     margin-bottom: 0.5px;
     font-size: 30px;
-    color: #0d0d0d;
+    color: #faf7f7;
 }
 
 .buttons{
-    /* width:  60px; */
-    /* height: 60px; */
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    background-color: white;
+    background-color: rgb(10, 10, 10);
     justify-items: center;
     align-items: center;
-    padding: 2rem
-    /* border-radius: 12px; */
-    /* font-size: 20px; */
-    /* color: rgb(9, 9, 9); */
-    /* cursor: pointer; */
-    /* padding: 10px; */
-    /* border: 1px solid #0d0d0d; */
-    /* box-sizing: border-box; */
-    /* text-align: center; */
+    padding: 2rem;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .buttons > .button {
@@ -56,26 +54,79 @@ body{
     height: 60px;
     border-radius: 12px;
     font-size: 20px;
-    color: rgb(9, 9, 9);
+    color: rgb(249, 245, 245);
     cursor: pointer;
     padding: 10px;
-    border: 1px solid #0d0d0d;
+    border: 1px solid orange;
+    box-shadow: 0 5px orange;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     display: flex;
+    
 
 }
 
-.butons > #specialButton{
+.buttons > #specialButton{
     width: 130px;
     height: 60px;
     box-sizing: border-box;
     grid-column-start: 3;
     grid-column-end: 5;
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 2rem;
 }
 
+.buttons > #allClearButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
 
+.buttons > #deleteButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.buttons > #percentageButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.buttons > #addButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.buttons > #minusButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.buttons > #multiplyButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.buttons > #divideButton{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+}
 
 
 
